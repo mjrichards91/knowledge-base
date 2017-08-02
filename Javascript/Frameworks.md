@@ -2,5 +2,8 @@
 
 A list of frameworks used or to be explored.
 
-## [Lodash](https://lodash.com/)
+## Utility
 
+### [Lodash](https://lodash.com/)
+
+### [Underscore.js](http://underscorejs.org/)
