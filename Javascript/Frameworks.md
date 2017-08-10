@@ -2,8 +2,12 @@
 
 A list of frameworks used or to be explored.
 
-## Utility
+### [Redux](http://redux.js.org/)
+
+## Utilities
 
 ### [Lodash](https://lodash.com/)
 
 ### [Underscore.js](http://underscorejs.org/)
+
+
