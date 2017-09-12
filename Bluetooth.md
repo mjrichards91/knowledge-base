@@ -1,5 +1,9 @@
 # Bluetooth
 
+Specifications and updates for Bluetooth.
+
+* See [Xamarin + Bluetooth]()
+
 ## Bluetooth 4.0
 
 ### Bluetooth Low-Energy (BLE)
