@@ -19,6 +19,8 @@ There really is no better, comprehensive documentation and examples than [the bo
 * Storage of unstructured data (like photos)
 * Invocation of custom code?
 
+[Mobile Apps Client SDK](https://github.com/Azure/azure-mobile-apps-net-client) for Xamarin, .NET Standard, and UWP.
+
 ## API Apps
 
 ## Continuous Deployment
