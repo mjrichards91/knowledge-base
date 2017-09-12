@@ -4,7 +4,7 @@
 
 ## Unit Testing
 
-Unit Testing ViewModels is made easier with the Prism framework .
+Unit Testing ViewModels is made easier with the Prism framework.
 
 * Mock implementations of Dependency Interfaces
-* Seed data using TODO
+* Seed data using fixtures
