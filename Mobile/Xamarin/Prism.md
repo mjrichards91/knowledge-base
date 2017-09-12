@@ -7,4 +7,4 @@
 Unit Testing ViewModels is made easier with the Prism framework.
 
 * Mock implementations of Dependency Interfaces
-* Seed data using fixtures
+* Seed data using [fixtures](../../.NET/UnitTesting/Fixtures.md)
