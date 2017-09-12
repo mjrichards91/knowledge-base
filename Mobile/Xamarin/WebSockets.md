@@ -8,3 +8,4 @@ SignalR is a Web Sockets implementation that uses TCP. It is most appropriate to
 
 * Is based on [Web Sockets](https://www.html5rocks.com/en/tutorials/websockets/basics/)
 * [Xamarin.Forms Example](https://github.com/schneidenbach/Xamarin-Forms-and-SignalR-Example)
+* [Documentation](https://components.xamarin.com/gettingstarted/signalr)
