@@ -8,8 +8,9 @@ Specifications and updates for Bluetooth.
 
 ### Bluetooth Low-Energy (BLE)
 
-https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction
+* https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction
 
 ## Bluetooth 5.0
 
-https://www.bluetooth.com/news/pressreleases/2016/06/16/-bluetooth5-quadruples-rangedoubles-speedincreases-data-broadcasting-capacity-by-800
+* https://www.bluetooth.com/news/pressreleases/2016/06/16/-bluetooth5-quadruples-rangedoubles-speedincreases-data-broadcasting-capacity-by-800
+* http://www.androidauthority.com/bluetooth-5-speed-range-762369/
