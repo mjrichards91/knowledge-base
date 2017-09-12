@@ -8,6 +8,8 @@ Specifications and updates for Bluetooth.
 
 ### Bluetooth Low-Energy (BLE)
 
+Bluetooth 4.0 introduces BLE technology.
+
 * https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction
 
 ## Bluetooth 5.0
