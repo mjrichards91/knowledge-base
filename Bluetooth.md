@@ -2,7 +2,7 @@
 
 Specifications and updates for Bluetooth.
 
-* See [Xamarin + Bluetooth]()
+* See [Xamarin + Bluetooth](/Mobile/Xamarin/Bluetooth.md)
 
 ## Bluetooth 4.0
 
