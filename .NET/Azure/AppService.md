@@ -8,6 +8,6 @@ All of the services are the same with minor UI distintions within the Azure port
 
 ## Mobile Apps
 
-* https://adrianhall.github.io/develop-mobile-apps-with-csharp-and-azure/
+There really is no better, comprehensive documentation and examples than [the book provided by Adrian Hall](https://adrianhall.github.io/develop-mobile-apps-with-csharp-and-azure/).
 
 ## API Apps
