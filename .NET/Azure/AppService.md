@@ -8,4 +8,6 @@ All of the services are the same with minor UI distintions within the Azure port
 
 ## Mobile Apps
 
+* https://adrianhall.github.io/develop-mobile-apps-with-csharp-and-azure/
+
 ## API Apps
