@@ -16,3 +16,14 @@
 3. Keep in mind…
     * The daily scrum should last 15 minutes. Any extended talks that are needed should be held outside of this collaboration.
     * This is also a time to let team members know about any time off or external project time that will impede progress on the sprint.
+    
+## Work with Product Owner
+
+1. Keep an open dialog with the PO to help with any issues that they may be facing:
+      * Issues with the development team.
+      * Issues with the backlog.
+      * Issues with the customer.
+2. Maintain the backlog with the PO.
+      * Help allocate reasonable amounts of work for a sprint.
+      * Help create collective understanding of backlog items.
+3. Schedule any meetings necessary to keep all members in sync (backlog grooming, reviews, etc.)
