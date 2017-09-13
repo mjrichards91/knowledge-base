@@ -27,3 +27,13 @@
       * Help allocate reasonable amounts of work for a sprint.
       * Help create collective understanding of backlog items.
 3. Schedule any meetings necessary to keep all members in sync (backlog grooming, reviews, etc.)
+
+## Motivation
+
+1. Be a coach to the entire team.
+2. Provide feedback to help the team grow and become experts to the agile process.
+
+## Retrospective
+
+1. Choose a retrospective theme and lead the conversation.
+2. Assure the team continues to follow committed changes discussed in this collaboration throughout all sprints.
