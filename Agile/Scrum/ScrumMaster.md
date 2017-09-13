@@ -54,3 +54,9 @@ Planning poker is the concept of the development team sizing a project through t
 1. A consensus must be made. There is to be no averaging of points. When there are differences in scores, they should be discussed to possibly uncover missing details that the team was unaware of. Votes should be casted until the team all agrees on the same point value. If a consensus absolutely cannot be made, take any of these approaches (at the teams discretion): take the highest value (to be conservative), take the lowest value (to be agressive), take the majority value, or simply average (should be last option).
 2. Stories that have a high number of points (20+) should be attempted to be broken down if possible during this time. If not possible, it will need to be broken down during the sprint planning. 
 3. There should be zero discussion of hours or developer days. All stories are to be sized in terms of points.
+
+## Tasks
+
+There are a variety of tasks a Scrum Master can and should be doing regularly.
+
+* https://www.collab.net/sites/default/files/uploads/ScrumMaster_Checklist.pdf
