@@ -44,7 +44,7 @@ The Development Team consists of professionals who do the work of delivering a p
 * Scrum recognizes no sub-teams in the Development Team, regardless of particular domains that need to be addressed like testing or business analysis; there are no exceptions to this rule
 *Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as a whole.
 
-### The Scrum Master
+### Scrum Master
 
 The Scrum Master is responsible for ensuring Scrum is understood and enacted. Scrum Masters do this by ensuring that the Scrum Team adheres to Scrum theory, practices, and rules. The Scrum Master is a servant-leader for the Scrum Team. The Scrum Master helps those outside the Scrum Team understand which of their interactions with the Scrum Team are helpful and which aren’t. The Scrum Master helps everyone change these interactions to maximize the value created by the Scrum Team.
 
