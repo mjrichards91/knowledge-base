@@ -6,7 +6,7 @@
 ## Scrum Theory
 
 ### Transparency
-Significant aspects of the process must be visible to those responsible for the outcome.Transparency requires those aspects be defined by a common standard so observers share a common understanding of what is being seen.​
+Significant aspects of the process must be visible to those responsible for the outcome. Transparency requires those aspects be defined by a common standard so observers share a common understanding of what is being seen.
 
 ### Inspection
 Scrum users must frequently inspect Scrum artifacts and progress toward a Sprint Goal to detect undesirable variances. Their inspection should not be so frequent that inspection gets in the way of the work. Inspections are most beneficial when diligently performed by skilled inspectors at the point of work.
@@ -50,6 +50,6 @@ The Scrum Master is responsible for ensuring Scrum is understood and enacted. Sc
 
 Related links about the Scrum Master:
 
-* http://www.mountaingoatsoftware.com/agile/scrum/scrummaster​
-* https://www.codeenigma.com/community/blog/scrum-master-not-project-manager​
-* http://agiletrail.com/2011/11/14/42-tasks-for-a-scrum-masters-job/​
+* http://www.mountaingoatsoftware.com/agile/scrum/scrummaster
+* https://www.codeenigma.com/community/blog/scrum-master-not-project-manager
+* http://agiletrail.com/2011/11/14/42-tasks-for-a-scrum-masters-job/
