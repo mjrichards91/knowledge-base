@@ -9,3 +9,8 @@
 3. Refactor. At this point, the method is probably not complete. Refactor the method to acheive the desired result and the test you have previously written should still be passing. Repeat the steps as you make updates over time.
 
 These steps are often referred to as RED -> GREEN -> REFACTOR.
+
+## Resources
+
+* https://www.youtube.com/watch?v=l4xhTq4qmC0
+
