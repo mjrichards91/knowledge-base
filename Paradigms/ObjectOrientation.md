@@ -4,7 +4,11 @@ https://en.wikipedia.org/wiki/Object-oriented_programming
 
 ## Abstraction
 
+Exposes only the required information about an object.
+
 ## Encapsulation
+
+Hides information about an object.
 
 ## Inheritance
 
