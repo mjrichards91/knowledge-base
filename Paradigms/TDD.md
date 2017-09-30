@@ -12,5 +12,5 @@ These steps are often referred to as RED -> GREEN -> REFACTOR.
 
 ## Resources
 
-* https://www.youtube.com/watch?v=l4xhTq4qmC0
+* Basic Example - https://www.youtube.com/watch?v=l4xhTq4qmC0
 
