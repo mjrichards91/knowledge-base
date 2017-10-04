@@ -11,6 +11,7 @@ Specifications and updates for Bluetooth.
 Bluetooth 4.0 introduces BLE technology.
 
 * https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction
+* http://www.argenox.com/a-ble-advertising-primer/
 
 ## Bluetooth 5.0
 
