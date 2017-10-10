@@ -18,6 +18,8 @@ npm start -- 10100
 Read the value:
 
 ```js
+// The first 2 arguments contain environemnt values for 
+// npm and nodejs and will ALWAYS be there.
 var args = process.argv.slice(2);
 
 console.log(args[0]);
