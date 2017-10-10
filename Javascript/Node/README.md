@@ -2,6 +2,11 @@
 
 ## Debugging
 
+1. Insert necessary `debugger` statements
+2. Run `node inspect main.js` 
+3. Run `repl` once a breakpoint is hit
+4. Run `cont` to continue to other breakpoints
+
 ## Arguments
 
 Pass the argument to the start script:
