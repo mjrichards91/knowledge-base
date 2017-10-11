@@ -9,3 +9,4 @@
 
 * https://martinfowler.com/bliki/Serverless.html
 * https://en.wikipedia.org/wiki/Serverless_computing
+* https://hackernoon.com/a-crash-course-on-serverless-with-node-js-632b37d58b44
