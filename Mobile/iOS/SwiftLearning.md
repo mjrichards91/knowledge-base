@@ -31,7 +31,7 @@ var red, green, blue: Double
 ```swift
 var friendlyWelcome = "Hello!"
 print("The current value of friendlyWelcome is \(friendlyWelcome)”)
-```swift
+```
 
 ### “ToString”
 
