@@ -39,9 +39,6 @@ print("The current value of friendlyWelcome is \(friendlyWelcome)”)
 String(somevar)
 ```
 
-Semicolons are NOT required but are if multiple statements are on a single line:
-let cat = “cat"; print(cat)
-
 ## Methods
 
 ```swift
@@ -49,7 +46,7 @@ func drawHorizontalLine(from startX: Double, to endX: Double, using color: UICol
 }
 ```
 
-`from`: is the name of the EXTERNAL parameter (used by the callers)
+`from`: is the name of the EXTERNAL parameter (used by the callers)  
 `startX`: is the name of the INTERNAL parameter (used internally to the func)
 
 ```swift
@@ -72,25 +69,37 @@ Homework: https://stackoverflow.com/questions/25951195/swift-print-vs-println-vs
 
 ## Optionals
 
-Has 2 values: set and not set. A set optional has an associated value “on the side”. String? means an associated string value (that is optional) that could be set or not set.
+Has 2 values: set and not set. A set optional has an associated value “on the side”. `String?` means an associated string value (that is optional) that could be set or not set.
 
-An “!” unwraps the associated value. If there is not associated value, then the app will crash and burn.
+An `!` unwraps the associated value. If there is not associated value, then the app will crash and burn.
 
 Optionals do not have to unwrapped to set.
 
-Declarations with a “!” automagically unwraps the optional value as the “?” does not. Implicitly unwrapped optional.
+### Implicitly unwrapped optional:
+
+```swift
+@IBOutlet weak var display: UILabel!
+```
+
+Declarations with a `!` automagically unwraps the optional value as the `?` does not. 
 
 ## UI
 
-UILabel? is optional so that iOS has time to connect the UI to the property
+`UILabel?` or `UILabel!` is optional so that iOS has time to connect the UI to the property
 
 ## Conventions
 
 Clarity over brevity!
 
+Semicolons are NOT required but are if multiple statements are on a single line:
+
+```swift
+let cat = “cat"; print(cat)
+```
+
 ## Properties
 
-All properties must be initialized unless they are optionals. Behind the scenes, optionals are set to nil
+All properties must be initialized unless they are optionals. Behind the scenes, optionals are set to `nil`
 
 ### Computed properties:
 
