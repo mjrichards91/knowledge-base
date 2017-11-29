@@ -786,3 +786,105 @@ Segues can be canceled through:
 ```swift
 func shouldPerformSegue(withIdentifier identifier: String, sender: Any) -> Bool
 ```
+
+### View Controller Lifecycle
+
+1. Creation (out of a Storyboard 99.9% of the time)
+1. `awakeFromNib`
+1. Preparation if being segued to
+1. Outlet setting
+1. `viewDidLoad`
+1. Appearing/disappearing (`viewWillAppear`, `viewDidAppear`)
+1. Geometry changes (`viewWillLayoutSubviews`, autolayout, `viewDidLayoutSubviews`)
+1. Low-memory situations (rarity)
+
+#### After instantiation and outlet-setting
+
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+}
+```
+
+You can update the UI from the model since the outlets are then set at that point. DO NOT do geometry based changes as the bounds are not yet set.
+
+#### Just before and after appearing
+
+```swift
+func viewWillAppear(_ animated: Bool)
+func viewDidAppear(_ animated: Bool)
+```
+
+If the view changes while off screen updates can happen there. Waiting until this method is called to do performance intensive tasks is ideal but keep in mind this will be called back and forth as a view appears and disappears. `viewDidAppear` can be used to start an animation since it actually is showing now.
+
+#### And then for disappearing
+
+```swift
+func viewWillDisappear(_ animated: Bool)
+func viewDidDisappear(_ animated: Bool)
+```
+
+Use that to clean up since the view has been removed from the screen but do not do time-consuming tasks as the app will appear sluggish.
+
+#### Geometry changes called when a view's frame changes (auto-rotation)
+
+```swift
+func viewWillLayoutSubviews()
+func viewDidLayoutSubviews()
+```
+
+Between "will" and "did", autolayout happens. Expect this to be called often, sometimes with the same bounds.
+
+#### To hook into autorotation
+
+```swift
+func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator)
+```
+
+#### In low memory situations
+
+```swift
+didReceiveMemoryWarning
+```
+
+Rarely happens, but consider it with high performing applications.
+
+#### awakeFromNib()
+
+Happens before all outlets are set. This is also a possibility, but put code somewhere else if at all possible.
+
+## Memory Management
+
+Swift uses Automatic Reference Counting as opposed to garbage collection. When there are zero references to a reference type, it gets tossed.
+
+### strong
+
+Normal reference counting (default).
+
+### weak
+
+If no one else is interested, set to nil, thus all weak reference types must be Optionals. Often used for outlets. Also used to prevent 2 references from endlessly living in the heap.
+
+### unowned
+
+Rarely used, but do not reference count the reference type. Crashes program if accessed and not available in the heap.
+
+### closures
+
+Closures are stored in the heap as strong.
+
+How to break memory cycles with either unowned or weak:
+
+```swift
+addUnaryOperation("pi") { [ unowned self ] in
+    self.display.textColor = UIColor.green
+    return sqrt($0)
+}
+```
+
+```swift
+addUnaryOperation("pi") { [ weak weakSelf = self ] in
+    weakSelf?.display.textColor = UIColor.green
+    return sqrt($0)
+}
+```
