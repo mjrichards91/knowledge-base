@@ -134,6 +134,14 @@ let x = display?.text?.hasValue { ... } // x is an Int? as it was never official
 
 `UILabel?` or `UILabel!` is optional so that iOS has time to connect the UI to the property
 
+Protect your application by chaining accessors to properties that may not be hooked up yet:
+
+```swift
+@IBOutlet weak var label: UILabel!
+
+label?.text = "I'm protected!"
+```
+
 ## Conventions
 
 Clarity over brevity!
@@ -660,3 +668,121 @@ image.drawAsPattern(inRect: aCGRect) // tile it
 ```
 
 Note the image is an Optional as it may not be found. Add `foo.jpg` to your project in the Images.xcassets file. Images can also be initialized from a file via contents or raw data.
+
+## Gestures
+
+Raw touch events (touch down, moved, up, etc) can be captured, but reacting to gestures is the preferred way to go.
+
+Gesture events can be handled by either the view or controller depending on if it affects the model or not.
+
+```swift
+@IBOutlet weak view var pannableView: UIView {
+    didSet {
+        let panGestureRecognizer = UIPanGestureRecognizer(
+            target: self,
+            action: #selector(ViewController.pan(recognizer))
+        )
+
+        pannableView.addGestureRecognizer(panGestureRecognizer)
+    }
+}
+
+func pan(recognizer: UIPanGestureRecognizer) {
+    switch recognizer.state {
+        case .changed: fallthrough
+        case .ended
+            let translation = recognizer.translation(in: pannableView)\
+            // Reset the starting point for the next time this is called
+            recognizer.setTranslation(CGPoint.zero, in: pannableView)
+        default: break
+    }
+}
+```
+
+Can get/set various information about the gesture:
+
+```swift
+// Pan gesture:
+func translation(in: UIView?) -> CGPoint // cumulative since start of recognition
+func velocity(in: UIView?) -> CGPoint // how fast the finger is moving
+func setTranslation(CGPoint, in: UIView?) // resets the translation
+
+var state: UIGestureRecognizerState
+// For continuous gestures .possible, .began, .changed, .ended
+// For discrete gestures .recognized, .ended
+// .failed and .canceled are possible too!
+
+// Pinch gesture:
+var scale: CGFloat
+var velocity: CGFloat { get }
+
+// Rotation gesture:
+var rotation: CGFloat
+var velocity: CGFloat { get }
+
+// Swipe gesture
+var direction: UISwipeGestureRecognizerDirection
+var numberOfTouchesRequired: Int
+
+// Tap
+var numberOfTapsRequired: Int
+var numberOfTouchesRequired: Int
+```
+
+## More MVC
+
+Various built-in controllers that contain multiple MVCs:
+
+```swift
+UITabBarController // MVC for each tab content
+UISplitViewController // master & detail MVCs
+UINavigationController // push & pops MVCs
+```
+
+Sub-MVCs can be accessed from `var viewControllers` property on a parent controller.
+
+The parent controller be accessed from any of these properties (if they exist):
+
+```swift 
+var tabBarController: UITabBarController? { get }
+var splitViewController: UISplitViewController? { get }
+var navigationController: UINavigationController? { get }
+```
+
+Wrapping a `UISplitViewController` within a `UINavigationController` allows the view to work on devices with smaller screens.
+
+### Segue
+
+Used to connect MVCs together and adapt based on the environment they are in.
+
+* Show Segue - push in a navigation controller, else modal
+* Show Detail Segue - show detail in a split view or push in a navigation controller
+* Modal Segue - take over the entire screen while the MVC is up
+* Popover Segue - make the MVC appear in a little popover window
+
+All segues create a new instance of an MVC, killing any old one.
+
+The segue identifier is mostly used when preparing to show the new MVC:
+
+```swift
+func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let identifier = segue.identifier {
+        switch identifier {
+            case "My Identifier":
+                if let vc = segue.destinationViewController as? MyController {
+                    vc.property1 = someValue
+                    vc.someMethodToSetUp(...)
+                }
+            default: break
+        }
+    }
+}
+```
+
+Note: Preparation happens BEFORE view outlets are set up.
+
+Segues can be canceled through:
+
+```swift
+func shouldPerformSegue(withIdentifier identifier: String, sender: Any) -> Bool
+```
