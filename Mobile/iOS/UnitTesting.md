@@ -49,3 +49,22 @@ pod install
 ## Start writing tests!
 
 Close Xcode and reopen the project using the newly generated `name-of-your-project.xcworkspace` file.
+
+Update your test file to use Quick and Nimble:
+
+```swift
+// Add imports
+import Quick
+import Nimble
+
+@testable import myProject
+
+// Inherit from QuickSpec
+class myProjectTests: QuickSpec {
+    
+    override func spec() {
+        // Write your tests!
+    }
+}
+
+```
