@@ -24,11 +24,11 @@ Create the Podfile in your project and paste the following:
 # Uncomment the next line to define a global platform for your project
 # platform :ios, ‘9.0’
 
-target ‘name-of-your-project’ do
+target ‘myProject’ do
   # Comment the next line if you’re not using Swift and don’t want to use dynamic frameworks
   use_frameworks!
 
- target ‘name-of-your-projects-tests-folder’ do
+ target ‘myProjectTests’ do
     inherit! :search_paths
     # Pods for testing
     pod ‘Quick’
@@ -47,7 +47,7 @@ pod install
 
 ## Start writing tests!
 
-Close Xcode and reopen the project using the newly generated `name-of-your-project.xcworkspace` file.
+Close Xcode and reopen the project using the newly generated `myProject.xcworkspace` file.
 
 Update your test file to use Quick and Nimble:
 
