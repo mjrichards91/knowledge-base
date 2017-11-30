@@ -34,7 +34,6 @@ target ‘name-of-your-project’ do
     pod ‘Quick’
     pod ‘Nimble’
   end
-
 end
 ```
 
