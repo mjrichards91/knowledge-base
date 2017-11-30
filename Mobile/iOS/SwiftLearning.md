@@ -888,3 +888,27 @@ addUnaryOperation("pi") { [ weak weakSelf = self ] in
     return sqrt($0)
 }
 ```
+
+## Error Handling
+
+Exceptions are of the type `Error`. UIKit throws an `NSError`. Methods that produce an error have the `throws` keyword at the end. To try those methods:
+
+```swift
+do {
+    // try performing the code that throws
+} catch let error {
+    // ruh roh, gotta handle the error
+}
+```
+
+If you are certain the error will never be thrown use:
+
+```swift
+try! someThrowingMethod() // App will crash if it does throw the error
+```
+
+Another alternative to catch is:
+
+```swift
+let x = try? someThrowingMethod() // x will be an Optional and nil if an error is thrown
+```
