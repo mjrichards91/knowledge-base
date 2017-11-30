@@ -18,19 +18,19 @@ sudo gem install cocoapods
 
 ## Create Podfile
 
-Create the Podfile and paste the following:
+Create the Podfile in your project and paste the following:
 
 ```ruby
 # Uncomment the next line to define a global platform for your project
 # platform :ios, ‘9.0’
 
-target ‘fizzbuzz’ do
+target ‘name-of-your-project’ do
   # Comment the next line if you’re not using Swift and don’t want to use dynamic frameworks
   use_frameworks!
 
  # Pods for fizzbuzz
 
- target ‘fizzbuzzTests’ do
+ target ‘name-of-your-projects-tests-folder’ do
     inherit! :search_paths
     # Pods for testing
     pod ‘Quick’
@@ -39,3 +39,15 @@ target ‘fizzbuzz’ do
 
 end
 ```
+
+## Install Pods
+
+Simply install the Pods from the Terminal:
+
+```
+pod install
+```
+
+## Start writing tests!
+
+Close Xcode and reopen the project using the newly generated `name-of-your-project.xcworkspace` file.
