@@ -4,7 +4,7 @@
 
 Follow the getting started guide:
 * https://github.com/appium/appium/blob/master/docs/en/about-appium/getting-started.md
-* Be sure to verify the installation via appium-doctor
+* Be sure to verify the installation via `appium-doctor`
 
 Installing iOS drivers (from the installation guide):
 * For use with the iOS simulator: https://github.com/appium/appium/blob/master/docs/en/drivers/ios-xcuitest.md
