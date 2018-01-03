@@ -18,7 +18,7 @@ To resolve issues with installing and linking Node and/or Carthage on macOS High
 
 iOS uses the [XCUITest Driver](https://appium.io/docs/en/drivers/ios-xcuitest/index.html). Simply installing it allows for running tests on the iOS Simulator.
 
-To run tests on a physical iOS device follow the [XCUITest Guide](https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/). It states that you must have a provisioning profile installed that includes the device to be tested on. Once the profile is installed, you can test an `.ipa` file on a physical device using the following capabilities as stated in the above guides:
+To run tests on a physical iOS device follow the [XCUITest Device Guide](https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/). It states that you must have a provisioning profile installed that includes the device to be tested on. Once the profile is installed, you can test an `.ipa` file on a physical device using the following capabilities as stated in the above guides:
 
 * `xcodeOrgId` - the unique team id that can be found at developer.apple.com/account in the "Membership" section
 * `xcodeSigningId` - most likely "iPhone Developer"
@@ -27,9 +27,25 @@ To run tests on a physical iOS device follow the [XCUITest Guide](https://appium
 
 ### Android Driver
 
+Android uses the [UiAutomator2 Driver](http://appium.io/docs/en/drivers/android-uiautomator2/index.html). Java and the Android SDK must be installed. This can be installed either through Android Studio or Visual Studio.
+
+Be sure to define the `ANDROID_HOME` and `JAVA_HOME` environment variables.
+
+On Mac, set these via the `~/.bash-profile`:
+
+```bash
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
+export PATH=${JAVA_HOME}/bin:$PATH
+export ANDROID_HOME=/Users/mrichards/Library/Android/sdk
+export PATH=${ANDROID_HOME}/platform-tools:$PATH
+export PATH=${ANDROID_HOME}/tools:$PATH
+```
+
 ## Cloud Testing
 
 ### Sauce Labs & Test Object
+
+TODO
 
 ## Best Practices When Writing Apps
 
