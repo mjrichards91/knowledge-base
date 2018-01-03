@@ -1,4 +1,4 @@
-# Appium & Mobile UI Testing
+# Appium
 
 ## Local Installation
 
@@ -72,6 +72,21 @@ iOSDeviceCapabilities.SetCapability(MobileCapabilityType.App, "path_to_your_ipa_
 iOSDeviceCapabilities.SetCapability(MobileCapabilityType.Udid, "udid_of_your_device");
 iOSDeviceCapabilities.SetCapability("xcodeOrgId", "your_apple_developer_team_id");
 iOSDeviceCapabilities.SetCapability("xcodeSigningId", "iPhone Developer");
+
+// Android Emulator
+capabilities.SetCapability(MobileCapabilityType.AutomationName, "UiAutomator2");
+capabilities.SetCapability("avd", "name_of_the_emulator_you_want_to_use");
+capabilities.SetCapability(MobileCapabilityType.PlatformName, "Android");
+capabilities.SetCapability(MobileCapabilityType.DeviceName, "Android Device");
+capabilities.SetCapability(MobileCapabilityType.App, "path_to_your_apk_file");
+capabilities.SetCapability(AndroidMobileCapabilityType.AppWaitActivity, "*");
+
+// Android Device
+capabilities.SetCapability(MobileCapabilityType.AutomationName, "UiAutomator2");
+capabilities.SetCapability(MobileCapabilityType.PlatformName, "Android");
+capabilities.SetCapability(MobileCapabilityType.DeviceName, "Android Device");
+capabilities.SetCapability(MobileCapabilityType.App, "path_to_your_apk_file");
+capabilities.SetCapability(AndroidMobileCapabilityType.AppWaitActivity, "*");
 ```
 
 Then use those capabilities to create a driver for the respected platform:
@@ -129,3 +144,12 @@ public class AwesomeTests
 ```
 
 Once you defined the capabilities, built the driver, and created some tests, it can be then used to connect to the Appium service and run the tests by simply running the tests as normal with NUnit.
+
+### Troubleshooting & Notes
+
+#### iOS
+
+#### Android
+
+* When using the Android emulator, make sure your build .apk file is compatible with it. If your emulator is an Intel x86 and your .apk is only built for armeabi-v7a, then it will not be able to install. (https://stackoverflow.com/a/41969077/1013377)
+* The `AppWaitActivity` capability set to a wildcard value prevents Appium from looking for the incorrect activity after the launcher activity (splash screen perhaps) finishes.
