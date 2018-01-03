@@ -165,6 +165,17 @@ Once you defined the capabilities, built the driver, and created some tests, it 
 
 ### Troubleshooting & Notes
 
+* To start the Appium server, there are two options:
+  * Start it locally through Appium Desktop. Simply open the application and start the server.
+  * Start it programmatically. Example:
+
+    ```csharp
+    this.localService = new AppiumServiceBuilder().Build();
+    this.localService.Start();
+
+    this.driver = new IOSDriver<IWebElement>(localService.ServiceUrl, capabilities);
+    ```
+
 #### iOS
 
 #### Android
