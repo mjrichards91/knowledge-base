@@ -74,20 +74,22 @@ For Xamarin, a new test project can be added to the solution. For native apps, a
 First define the capabilities for which your tests will run against. Some examples:
 
 ```csharp
+DesiredCapabilities capabilities = new DesiredCapabilities();
+
 // iOS Simulator capabilities
-iOSSimulatorCapabilities.SetCapability(MobileCapabilityType.AutomationName, "XCUITest");
-iOSSimulatorCapabilities.SetCapability(MobileCapabilityType.PlatformName, "iOS");
-iOSSimulatorCapabilities.SetCapability(MobileCapabilityType.DeviceName, "iPhone Simulator");
-iOSSimulatorCapabilities.SetCapability(MobileCapabilityType.App, "path_to_my_app_file");
+capabilities.SetCapability(MobileCapabilityType.AutomationName, "XCUITest");
+capabilities.SetCapability(MobileCapabilityType.PlatformName, "iOS");
+capabilities.SetCapability(MobileCapabilityType.DeviceName, "iPhone Simulator");
+capabilities.SetCapability(MobileCapabilityType.App, "path_to_my_app_file");
 
 // Physical iOS device
-iOSDeviceCapabilities.SetCapability(MobileCapabilityType.AutomationName, "XCUITest");
-iOSDeviceCapabilities.SetCapability(MobileCapabilityType.PlatformName, "iOS");
-iOSDeviceCapabilities.SetCapability(MobileCapabilityType.DeviceName, "iPhone 7 Plus");
-iOSDeviceCapabilities.SetCapability(MobileCapabilityType.App, "path_to_your_ipa_file");
-iOSDeviceCapabilities.SetCapability(MobileCapabilityType.Udid, "udid_of_your_device");
-iOSDeviceCapabilities.SetCapability("xcodeOrgId", "your_apple_developer_team_id");
-iOSDeviceCapabilities.SetCapability("xcodeSigningId", "iPhone Developer");
+capabilities.SetCapability(MobileCapabilityType.AutomationName, "XCUITest");
+capabilities.SetCapability(MobileCapabilityType.PlatformName, "iOS");
+capabilities.SetCapability(MobileCapabilityType.DeviceName, "iPhone 7 Plus");
+capabilities.SetCapability(MobileCapabilityType.App, "path_to_your_ipa_file");
+capabilities.SetCapability(MobileCapabilityType.Udid, "udid_of_your_device");
+capabilities.SetCapability("xcodeOrgId", "your_apple_developer_team_id");
+capabilities.SetCapability("xcodeSigningId", "iPhone Developer");
 
 // Android Emulator
 capabilities.SetCapability(MobileCapabilityType.AutomationName, "UiAutomator2");
