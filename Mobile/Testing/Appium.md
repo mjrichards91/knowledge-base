@@ -31,7 +31,11 @@ Android uses the [UiAutomator2 Driver](http://appium.io/docs/en/drivers/android-
 
 Be sure to define the `ANDROID_HOME` and `JAVA_HOME` environment variables.
 
-On Mac, set these via the `~/.bash-profile`:
+#### On Mac
+
+There are 2 places the environment variables need to be set.
+
+First, set these via the `~/.bash-profile`:
 
 ```bash
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
@@ -40,6 +44,15 @@ export ANDROID_HOME=/Users/mrichards/Library/Android/sdk
 export PATH=${ANDROID_HOME}/platform-tools:$PATH
 export PATH=${ANDROID_HOME}/tools:$PATH
 ```
+
+Then set them using `launchd`:
+
+```bash
+setenv JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
+setenv ANDROID_HOME=/Users/mrichards/Library/Android/sdk
+```
+
+See for more information: https://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x/3756686#3756686
 
 ## Cloud Testing
 
