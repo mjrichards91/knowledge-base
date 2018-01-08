@@ -48,10 +48,14 @@ Check connectivity
 
 ### Geolocation
 
+* https://github.com/NativeScript/nativescript-geolocation
+
 ### Bluetooth
 
 * https://www.npmjs.com/package/nativescript-bluetooth
 
 ### Microphone / Audio Recording
+
+* https://github.com/bradmartin/nativescript-audio
 
 ### Permissions
