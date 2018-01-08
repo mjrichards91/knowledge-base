@@ -5,6 +5,7 @@
 Note: These plugins are are found by simply searching, I have no experience using any of them.
 
 https://market.nativescript.org/
+https://www.npmjs.com/ 
 
 ### Notifications
 
