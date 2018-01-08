@@ -2,6 +2,8 @@
 
 ## Plugins
 
+James Montemagno has a comprehensive [list of plugins](https://github.com/jamesmontemagno/Xamarin.Plugins#my-current-plugins-for-xamarin) he contributes to for various functionality and they are all highly recommended.
+
 ### Fingerprint
 
 * https://github.com/smstuebe/xamarin-fingerprint 
