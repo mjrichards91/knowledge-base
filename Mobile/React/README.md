@@ -63,6 +63,9 @@ There are no modules that support using the camera. There are ones to get photos
 
 ### Bluetooth
 
+* BLE - https://github.com/Polidea/react-native-ble-plx
+* Bluetooth Classic - https://github.com/rusel1989/react-native-bluetooth-serial 
+
 ### Microphone / Audio Recording
 
 ### Permissions
