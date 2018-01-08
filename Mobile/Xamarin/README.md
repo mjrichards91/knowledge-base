@@ -31,3 +31,16 @@
 ### Geolocation
 
 * https://github.com/jamesmontemagno/GeolocatorPlugin
+
+### Camera / Media
+
+* https://github.com/jamesmontemagno/MediaPlugin
+
+### Storage
+
+* https://github.com/dsplaisted/PCLStorage
+
+### Offline Capabilities
+
+* Check connectivity - https://github.com/jamesmontemagno/ConnectivityPlugin
+* SQLite - https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/databases/
