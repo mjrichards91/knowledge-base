@@ -4,9 +4,21 @@
 
 Follow the [getting started guide](http://facebook.github.io/react-native/docs/getting-started.html) provided by React Native.
 
-`npm 5` is currently not suppported to create and run a project ([source](https://github.com/facebook/react-native/issues/14767)). Use `yarn` instead. `brew install yarn` and then run the command to create a project. 
+`npm 5` is currently not suppported to create and run a project ([source](https://github.com/facebook/react-native/issues/14767)). Use `yarn` instead.
 
-Make sure `watchman` is installed as well to correctly start the project server (`brew install watchman`).
+```bash
+$ brew install yarn
+$
+$ create-react-native-app AwesomeProject
+$
+$ yarn start
+```
+
+Make sure `watchman` is installed as well to correctly start the project server 
+
+```bash
+$ brew install watchman
+```
 
 ## Plugins
 
