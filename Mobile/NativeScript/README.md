@@ -1,5 +1,9 @@
 # NativeScript
 
+## Installation
+
+Follow the [getting started](https://docs.nativescript.org/start/quick-setup) guide. Be sure to use `tns doctor` to confirm installation.
+
 ## Plugins
 
 Note: These plugins are are found by simply searching, I have no experience using any of them.
