@@ -11,6 +11,7 @@ Note: These plugins are are found by simply searching, I have no experience usin
 SQLite
 
 * https://github.com/NathanaelA/nativescript-sqlite
+* https://code.tutsplus.com/tutorials/code-a-real-time-nativescript-app-sqlite--cms-29057
 
 Check connectivity
 
