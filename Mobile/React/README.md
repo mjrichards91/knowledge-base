@@ -33,6 +33,7 @@ There is only a module for Notifications on iOS.
 ### Offline Capabilities
 
 * SQLite - https://github.com/andpor/react-native-sqlite-storage 
+* Network Status - https://facebook.github.io/react-native/docs/netinfo.html
 
 ### Camera / Media
 
