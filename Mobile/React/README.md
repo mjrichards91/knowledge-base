@@ -68,7 +68,11 @@ There are no modules that support using the camera. There are ones to get photos
 
 ### Microphone / Audio Recording
 
+* https://github.com/jsierles/react-native-audio
+
 ### Permissions
+
+* https://github.com/yonahforst/react-native-permissions
 
 
 
