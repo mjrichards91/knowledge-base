@@ -6,10 +6,10 @@ Follow the [getting started](https://docs.nativescript.org/start/quick-setup) gu
 
 ## Plugins
 
-Note: These plugins are are found by simply searching, I have no experience using any of them.
+* https://market.nativescript.org/
+* https://www.npmjs.com/ 
 
-https://market.nativescript.org/
-https://www.npmjs.com/ 
+Note: These plugins are are found by simply searching, I have no experience using any of them.
 
 ### Notifications
 
