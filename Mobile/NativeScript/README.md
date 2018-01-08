@@ -4,6 +4,8 @@
 
 Note: These plugins are are found by simply searching, I have no experience using any of them.
 
+https://market.nativescript.org/
+
 ### Notifications
 
 * https://code.tutsplus.com/tutorials/code-a-real-time-app-with-nativescript-push-notifications--cms-29475
@@ -33,9 +35,16 @@ Check connectivity
 
 ### Storage
 
+* https://docs.nativescript.org/cookbook/file-system
+
 ### Fingerprint
 
+* https://github.com/EddyVerbruggen/nativescript-fingerprint-auth
+
 ### Sensors
+
+* https://www.npmjs.com/package/nativescript-accelerometer
+* (iOS only) https://github.com/stephenfeather/nativescript-coremotion
 
 ### Geolocation
 
