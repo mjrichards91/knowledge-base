@@ -8,6 +8,15 @@ Note: These plugins are are found by simply searching, I have no experience usin
 
 ### Offline Capabilities
 
+SQLite
+
+* https://github.com/NathanaelA/nativescript-sqlite
+
+Check connectivity
+
+* https://docs.nativescript.org/cookbook/connectivity
+* https://www.thepolyglotdeveloper.com/2017/07/determine-network-availability-nativescript-angular-mobile-app/
+
 ### Camera / Media
 
 ### Storage
