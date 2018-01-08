@@ -26,13 +26,25 @@ Note: These plugins are are found by simply searching, I have no experience usin
 
 ### Notifications
 
+There is only a module for Notifications on iOS.
+
 * https://github.com/zo0r/react-native-push-notification 
 
 ### Offline Capabilities
 
+* SQLite - https://github.com/andpor/react-native-sqlite-storage 
+
 ### Camera / Media
 
+There are no modules that support using the camera. There are ones to get photos from the camera roll, however.
+
+* https://github.com/react-native-community/react-native-camera
+
 ### Storage
+
+[AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html#docsNav) is an option here.
+
+* https://github.com/itinance/react-native-fs
 
 ### Fingerprint
 
