@@ -39,6 +39,7 @@ There is only a module for Notifications on iOS.
 
 There are no modules that support using the camera. There are ones to get photos from the camera roll, however.
 
+* Camera Roll - https://facebook.github.io/react-native/docs/cameraroll.html#docsNav 
 * https://github.com/react-native-community/react-native-camera
 
 ### Storage
@@ -49,9 +50,16 @@ There are no modules that support using the camera. There are ones to get photos
 
 ### Fingerprint
 
+* https://github.com/hieuvp/react-native-fingerprint-scanner
+
 ### Sensors
 
+* https://github.com/kprimice/react-native-sensor-manager
+
 ### Geolocation
+
+* https://facebook.github.io/react-native/docs/geolocation.html#docsNav
+* https://github.com/transistorsoft/react-native-background-geolocation
 
 ### Bluetooth
 
