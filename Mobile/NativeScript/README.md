@@ -6,6 +6,14 @@ Note: These plugins are are found by simply searching, I have no experience usin
 
 ### Notifications
 
+* https://code.tutsplus.com/tutorials/code-a-real-time-app-with-nativescript-push-notifications--cms-29475
+* https://github.com/NativeScript/push-plugin
+* https://github.com/EddyVerbruggen/nativescript-local-notifications
+
+Firebase
+
+* https://github.com/EddyVerbruggen/nativescript-plugin-firebase
+
 ### Offline Capabilities
 
 SQLite
@@ -19,6 +27,9 @@ Check connectivity
 * https://www.thepolyglotdeveloper.com/2017/07/determine-network-availability-nativescript-angular-mobile-app/
 
 ### Camera / Media
+
+* https://docs.nativescript.org/hardware/camera
+* https://github.com/NativeScript/nativescript-camera 
 
 ### Storage
 
