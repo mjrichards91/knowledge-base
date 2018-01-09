@@ -126,10 +126,19 @@ require('data/observable');
 
 ### Fetch
 
-The [Fetch module](https://docs.nativescript.org/cookbook/fetch) is used to make remote requests. 
+The [Fetch module](https://docs.nativescript.org/cookbook/fetch) is used to make remote requests. It can be accessed globally in NativeScript without having to require it with simply `fetch()`.
 
 ```js
+// This is not necessary, but shown for context
 require('fetch')
+```
+
+### Dialogs
+
+The [Dialogs module](https://docs.nativescript.org/ui/dialogs) can be used to display a variety of dialogs from action sheets, confirmation boxes, alerts, and prompts.
+
+```js
+require('ui/dialogs')
 ```
 
 ## Plugins
