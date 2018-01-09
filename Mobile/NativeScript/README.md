@@ -29,11 +29,11 @@ $ tns run android
 $ tns run ios
 ```
 
-Live updates will not work when new dependencies are added. 
+### Tips
 
-`console.log` can be used to print primitive values to the console. 
-
-`console.dir` should be used to output objects.
+* Live updates will not work when new dependencies are added. 
+* `console.log` can be used to print primitive values to the console. 
+* `console.dir` should be used to output objects.
 
 ## Writing Apps
 
