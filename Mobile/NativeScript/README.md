@@ -40,6 +40,10 @@ An app is divided into multiple folders and files:
 * `platforms` - platform specific code needed to build for each. Files here are generated from `tns build` and should be treated as read-only and ignored in Git.
 * `package.json`
 
+### Layouts
+
+See [documentation](https://docs.nativescript.org/ui/layouts), check out [some code samples](https://docs.nativescript.org/angular/code-samples/ui/layouts), and look into an [in-depth analysis](https://developer.telerik.com/featured/demystifying-nativescript-layouts/) for each layout. 
+
 ## Plugins
 
 * https://market.nativescript.org/
