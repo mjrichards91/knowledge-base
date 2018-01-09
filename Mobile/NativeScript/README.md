@@ -17,6 +17,8 @@ $ tns run android
 $ tns run ios
 ```
 
+Live updates will not work when new dependencies are added. 
+
 ## Plugins
 
 * https://market.nativescript.org/
