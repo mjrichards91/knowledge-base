@@ -4,6 +4,14 @@ Cross-plaform mobile framework that generates native mobile apps (not webviews) 
 
 This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](https://www.progress.com/).
 
+## Contents
+
+* [Learning](#learning)
+* [Installation](#installation)
+* [Debugging](#debugging)
+* [Writing Apps](#writing-apps)
+* [Plugins](#plugins)
+
 ## Learning
 
 There is a tutorial provided by NativeScript as either [text-based](https://docs.nativescript.org/tutorial) or [video](https://courses.nativescripting.com/courses/171132/lectures/2573585).
@@ -28,6 +36,8 @@ Live updates will not work when new dependencies are added.
 `console.dir` should be used to output objects.
 
 ## Writing Apps
+
+### Contents
 
 * [Structure](#structure)
 * [Layouts](#layouts)
