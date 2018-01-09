@@ -44,6 +44,12 @@ An app is divided into multiple folders and files:
 
 See [documentation](https://docs.nativescript.org/ui/layouts), check out [some code samples](https://docs.nativescript.org/angular/code-samples/ui/layouts), and look into an [in-depth analysis](https://developer.telerik.com/featured/demystifying-nativescript-layouts/) for each layout. 
 
+### CSS
+
+See [documentation](https://docs.nativescript.org/ui/styling) on styling. CSS can be applied to an app globally, per page, and inline using the `style` attribute. Rule of thumb is to generally avoid inline styles and to make a conscience effort to place CSS correctly as gloablly or for a specific page.
+
+For platform specific styling, add `@import url('~/platform.css');` as the first statment in the `app.css` file. Then, add specific style values to either the `platform.android.css` or `platform.ios.css` file.
+
 ## Plugins
 
 * https://market.nativescript.org/
