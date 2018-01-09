@@ -111,7 +111,9 @@ page.bindingContext = user;
 The [Frame module](https://docs.nativescript.org/cookbook/ui/frame) is used to perform navigation.
 
 ```js
-require('ui/frame')
+var frameModule = require('ui/frame');
+
+frameModule.topmost().navigate('views/myView/myView');
 ```
 
 ### Observable
@@ -120,6 +122,14 @@ The [Observable module](https://docs.nativescript.org/cookbook/data/observable) 
 
 ```js
 require('data/observable');
+```
+
+### Fetch
+
+The [Fetch module](https://docs.nativescript.org/cookbook/fetch) is used to make remote requests. 
+
+```js
+require('fetch')
 ```
 
 ## Plugins
