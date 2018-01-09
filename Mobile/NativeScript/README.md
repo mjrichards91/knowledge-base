@@ -29,6 +29,11 @@ Live updates will not work when new dependencies are added.
 
 ## Writing Apps
 
+* [Structure](#structure)
+* [Layouts](#layouts)
+* [CSS](#css)
+* [Images](#images)
+
 ### Structure
 
 An app is divided into multiple folders and files:
