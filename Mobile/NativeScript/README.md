@@ -1,5 +1,9 @@
 # NativeScript
 
+Cross-plaform mobile framework that generates native mobile apps (not webviews) through Javascript and CSS.
+
+This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](https://www.progress.com/).
+
 ## Installation
 
 Follow the [getting started](https://docs.nativescript.org/start/quick-setup) guide. Be sure to use `tns doctor` to confirm installation.
