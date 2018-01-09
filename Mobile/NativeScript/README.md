@@ -37,12 +37,16 @@ $ tns run ios
 
 ## Writing Apps
 
+NativeScript apps use [CommonJS](http://eng.wealthfront.com/2015/06/16/an-introduction-to-commonjs/) syntax.
+
 ### Contents
 
 * [Structure](#structure)
 * [Layouts](#layouts)
 * [CSS](#css)
 * [Images](#images)
+* [Code Behind](#code-behind)
+* [View Model](#view-model)
 
 ### Structure
 
@@ -74,6 +78,49 @@ For platform specific styling, add `@import url('~/platform.css');` as the first
 Images can be referenced with a URL from a website, relative to the `app/images` folder (`~/images/logo.png`), or use platform specific resources (`res://logo_login`). Platform specific is the preferred way to reference images to deal with varying resolutions. Those images are to be put in the `app/App_Resources` folder in the appropriate spots.
 
 A helpful tool to create images for varying resolutions is the [NativeScript Image Builder](http://nsimage.brosteins.com/).
+
+### Code Behind
+
+Named identically as the view. 
+
+Navigation can be performed here using the [frame](#frame) module.
+
+Adding an id to a view element allows access to it in the code behind through the page's `page.getViewById('your_id')` method.
+
+### View Model
+
+[Observable](#observable) is the module that is used as the view model.
+
+A page's binding context can be set to an observable module (i.e the view model):
+
+```js
+var observableModule = require('data/observable');
+
+var user = new observableModule.fromObject({
+    email: 'user@domain.com',
+    password: 'password'
+})
+
+page.bindingContext = user;
+```
+
+## Modules
+
+### Frame
+
+The [Frame module](https://docs.nativescript.org/cookbook/ui/frame) is used to perform navigation.
+
+```js
+require('ui/frame')
+```
+
+### Observable
+
+The [Observable module](https://docs.nativescript.org/cookbook/data/observable) is used as the view model in the MVVM convention.
+
+```js
+require('data/observable');
+```
 
 ## Plugins
 
