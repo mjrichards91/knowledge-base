@@ -1,6 +1,6 @@
 # NativeScript
 
-Cross-plaform mobile framework that generates native mobile apps (not webviews) through Javascript and CSS.
+Cross-plaform mobile framework that generates __*native*__ mobile apps (not webviews) through Javascript and CSS.
 
 This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](https://www.progress.com/).
 
