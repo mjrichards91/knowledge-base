@@ -19,6 +19,10 @@ $ tns run ios
 
 Live updates will not work when new dependencies are added. 
 
+`console.log` can be used to print primitive values to the console. 
+
+`console.dir` should be used to output objects.
+
 ## Plugins
 
 * https://market.nativescript.org/
