@@ -6,7 +6,16 @@ This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](h
 
 ## Installation
 
-Follow the [getting started](https://docs.nativescript.org/start/quick-setup) guide. Be sure to use `tns doctor` to confirm installation.
+Installation and interaction with NativeScript is done through CLI (command line). Follow the [getting started](https://docs.nativescript.org/start/quick-setup) guide. Be sure to use `tns doctor` to confirm installation.
+
+## Debugging
+
+Use the `tns run` command to start your app. While the app is running, live changes can be made to the code and the watcher will automagically persist to the running application.
+
+```bash
+$ tns run android
+$ tns run ios
+```
 
 ## Plugins
 
