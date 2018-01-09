@@ -23,6 +23,23 @@ Live updates will not work when new dependencies are added.
 
 `console.dir` should be used to output objects.
 
+## Writing Apps
+
+### Structure
+
+An app is divided into multiple folders and files:
+
+* `app` - where views and logic exist. Most time spent coding will be here.
+* `app/App_Resources` - platform specific resources such as configuration files, icons, splash screens, etc.
+* `app/shared` - files to be shared across views
+* `app/views` - the views for the app with subfolders for each view. Each view contains a `.xml`, `.js`, and optional `.css`.
+* `app/app.css` - global styling for the app
+* `app/app.js` - starting point for the app 
+* `hooks` - preprocessor scripts
+* `node_modules` - npm dependencies including cross-platform `tns-core-modules`
+* `platforms` - platform specific code needed to build for each. Files here are generated from `tns build` and should be treated as read-only and ignored in Git.
+* `package.json`
+
 ## Plugins
 
 * https://market.nativescript.org/
