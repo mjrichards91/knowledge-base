@@ -111,10 +111,17 @@ page.bindingContext = user;
 
 ## Modules
 
-Note: Not experienced in all modules, but each are worth evaluating for use.
+Modules are included out of the box with NativeScript and others can be found through NPM.
+
+Sources:
 
 * https://market.nativescript.org/
 * https://www.npmjs.com/ 
+
+Tips:
+
+* By using `--save` when installing packages, the package gets recorded in the `package.json` dependencies. This is helpful for other developers who will be working on your project and run `npm install`. 
+* Not all npm modules will work with NativeScript, especially if they rely on Node.js or browser functionality. Here's a quick reference to some of the [most popular supported modules](https://github.com/NativeScript/NativeScript/wiki/supported-npm-modules).
 
 
 ### Frame
@@ -165,6 +172,10 @@ The [Dialogs module](https://docs.nativescript.org/ui/dialogs) can be used to di
 ```js
 require('ui/dialogs')
 ```
+
+### Validation
+
+The [email-validator](https://www.npmjs.com/package/email-validator) module is a quick and easy way to validate email addresses.
 
 ### Notifications
 
