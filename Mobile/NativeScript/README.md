@@ -15,7 +15,7 @@ This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](h
 
 ## Learning
 
-There are [introductory courses](https://courses.nativescripting.com/) provided by NativeScript to get your feet wet.
+There are [introductory courses](https://courses.nativescripting.com/courses) provided by NativeScript to get your feet wet.
 
 [Complete sample solutions](https://www.nativescript.org/app-samples-with-code) and [snacks](http://www.nativescriptsnacks.com/) are available demonstrating various abilities and approaches.
 
