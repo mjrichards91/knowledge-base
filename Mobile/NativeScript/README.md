@@ -4,6 +4,10 @@ Cross-plaform mobile framework that generates __*native*__ mobile apps (not webv
 
 This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](https://www.progress.com/).
 
+## Which Flavor?
+
+NativeScript can be written in a few different ways. With plain 'ol Javascript is the most lightweight option. Typescript can be used without Angular to take advantage of the language. Lastly, Angular can be used. It might be beneficial to use the Angular flavor if you intend to reuse logic from an Angular web app on the mobile app. Typescript is also a "first-class citizen" in the NativeScript world as that is what it is written in so taking advantage of it will play well into the envrionment. Plain 'ol Javascript can be preferred as the most simple way to get started without the overhead of learning Angular. 
+
 ## Contents
 
 * [Learning](#learning)
