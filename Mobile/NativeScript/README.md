@@ -130,6 +130,20 @@ The [Observable module](https://docs.nativescript.org/cookbook/data/observable) 
 require('data/observable');
 ```
 
+There is also an [Observable Array module](https://docs.nativescript.org/cookbook/data/observable-array) that can be used to bind an array collection.
+
+```js
+var ObservableArray = require("data/observable-array").ObservableArray;
+
+var pageData = new observableModule.fromObject({
+    groceryList: new ObservableArray([
+        { name: "eggs" },
+        { name: "bread" },
+        { name: "cereal" }
+    ])
+});
+```
+
 ### Fetch
 
 The [Fetch module](https://docs.nativescript.org/cookbook/fetch) is used to make remote requests. It can be accessed globally in NativeScript without having to require it with simply `fetch()`.
