@@ -60,18 +60,29 @@ NativeScript apps use [CommonJS](http://eng.wealthfront.com/2015/06/16/an-introd
 
 ### Structure
 
-An app is divided into multiple folders and files:
+An app is divided into multiple folders and files depending on Angular use:
 
 * `app` - where views and logic exist. Most time spent coding will be here.
 * `app/App_Resources` - platform specific resources such as configuration files, icons, splash screens, etc.
-* `app/shared` - files to be shared across views
-* `app/views` - the views for the app with subfolders for each view. Each view contains a `.xml`, `.js`, and optional `.css`.
+* `app/shared` - files to be shared across views. This can be named anything.
 * `app/app.css` - global styling for the app
-* `app/app.js` - starting point for the app 
 * `hooks` - preprocessor scripts
-* `node_modules` - npm dependencies including cross-platform `tns-core-modules`
+* `node_modules` - npm dependencies including cross-platform `tns-core-modules` and Angular implementation if using it
 * `platforms` - platform specific code needed to build for each. Files here are generated from `tns build` and should be treated as read-only and ignored in Git.
 * `package.json`
+
+#### Javascript
+
+* `app/views` - the views for the app with subfolders for each view. Each view contains a `.xml`, `.js`, and optional `.css`. This folder can be named anything.
+* `app/app.js` - starting point for the app 
+
+#### Angular
+
+* `app/pages` - the pages for the app with subfolders for each view. Each view contains a `*.compoenent.ts` file, optional `.html`, and optional `.css` files. This folder can be named anything.
+* `app/app.component.ts` - primary file that drives the Angular application
+* `app/app.module.ts` - main configuration for application
+* `app/main.ts` - the starting point for the app
+* `tsconfig.json` - Typescript configuration
 
 When using Angular, there will be both .js and .ts files which are generated and required for compilation. These can be ignored in the editor. If using Visual Studio Code, add this to your projects settings:
 
