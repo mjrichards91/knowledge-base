@@ -113,12 +113,10 @@ page.bindingContext = user;
 
 Modules are included out of the box with NativeScript and others can be found through NPM.
 
-Sources for modules, plugins, and ideas:
+Sources for modules and plugins:
 
 * https://market.nativescript.org/
-* https://plugins.nativescript.org/
-* https://nativescript.rocks/new.php/
-* https://nativescript.ideas.aha.io/
+* https://plugins.nativescript.rocks/
 * https://www.npmjs.com/ 
 
 Tips:
