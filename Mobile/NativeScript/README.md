@@ -44,6 +44,7 @@ NativeScript apps use [CommonJS](http://eng.wealthfront.com/2015/06/16/an-introd
 * [Structure](#structure)
 * [Layouts](#layouts)
 * [CSS](#css)
+* [Animations](#animations)
 * [Images](#images)
 * [Code Behind](#code-behind)
 * [View Model](#view-model)
@@ -72,6 +73,10 @@ See [documentation](https://docs.nativescript.org/ui/layouts), check out [some c
 See [documentation](https://docs.nativescript.org/ui/styling) on styling. CSS can be applied to an app globally, per page, and inline using the `style` attribute. Rule of thumb is to generally avoid inline styles and to make a conscience effort to place CSS correctly as gloablly or for a specific page.
 
 For platform specific styling, add `@import url('~/platform.css');` as the first statment in the `app.css` file. Then, add specific style values to either the `platform.android.css` or `platform.ios.css` file.
+
+### Animations
+
+Animations such as opacity, background color, translations, scaling, and rotating can all be controlled on the native platform from NativeScript. See [documentation](https://docs.nativescript.org/ui/animation) for more information.
 
 ### Images
 
