@@ -27,6 +27,8 @@ Installation and interaction with NativeScript is done through CLI (command line
 
 To create a blank app, simply using `tns create MyApp` will create a blank "Hello World" app. [Templates](https://docs.nativescript.org/tooling/app-templates) are also available to start with a more complete solution.
 
+To create a blank Angular app, use `tns create MyApp --ng`.
+
 ## Debugging
 
 Use the `tns run` command to start your app. While the app is running, live changes can be made to the code and the watcher will automagically persist to the running application.
@@ -70,6 +72,15 @@ An app is divided into multiple folders and files:
 * `node_modules` - npm dependencies including cross-platform `tns-core-modules`
 * `platforms` - platform specific code needed to build for each. Files here are generated from `tns build` and should be treated as read-only and ignored in Git.
 * `package.json`
+
+When using Angular, there will be both .js and .ts files which are generated and required for compilation. These can be ignored in the editor. If using Visual Studio Code, add this to your projects settings:
+
+```js
+"files.exclude": {
+    "**/*.js": { "when": "$(basename).ts" },
+    "**/*.map": { "when": "$(basename).map" }
+}
+```
 
 ### Layouts
 
