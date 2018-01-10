@@ -113,16 +113,19 @@ page.bindingContext = user;
 
 Modules are included out of the box with NativeScript and others can be found through NPM.
 
-Sources:
+Sources for modules, plugins, and ideas:
 
 * https://market.nativescript.org/
+* https://plugins.nativescript.org/
+* https://nativescript.rocks/new.php/
+* https://nativescript.ideas.aha.io/
 * https://www.npmjs.com/ 
 
 Tips:
 
 * By using `--save` when installing packages, the package gets recorded in the `package.json` dependencies. This is helpful for other developers who will be working on your project and run `npm install`. 
 * Not all npm modules will work with NativeScript, especially if they rely on Node.js or browser functionality. Here's a quick reference to some of the [most popular supported modules](https://github.com/NativeScript/NativeScript/wiki/supported-npm-modules).
-
+* NativeScript plugins differ from npm modules in how they are installed. Use `tns plugin add <your-plugin-here>` to add them to your project. This command works the same as `npm install --save`, but also configures any native code required to get it to work.
 
 ### Frame
 
