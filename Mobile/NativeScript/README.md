@@ -10,7 +10,7 @@ This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](h
 * [Installation](#installation)
 * [Debugging](#debugging)
 * [Writing Apps](#writing-apps)
-* [Plugins](#plugins)
+* [Modules](#modules)
 
 ## Learning
 
