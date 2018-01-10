@@ -15,11 +15,17 @@ This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](h
 
 ## Learning
 
-There is a tutorial provided by NativeScript as either [text-based](https://docs.nativescript.org/tutorial) or [video](https://courses.nativescripting.com/courses/171132/lectures/2573585).
+There are [introductory courses](https://courses.nativescripting.com/) provided by NativeScript to get your feet wet.
+
+[Complete sample solutions](https://www.nativescript.org/app-samples-with-code) and [snacks](http://www.nativescriptsnacks.com/) are available demonstrating various abilities and approaches.
+
+More [resources](https://www.nativescript.org/resources) are also available.
 
 ## Installation
 
 Installation and interaction with NativeScript is done through CLI (command line). Follow the [getting started](https://docs.nativescript.org/start/quick-setup) guide. Be sure to use `tns doctor` to confirm installation.
+
+To create a blank app, simply using `tns create MyApp` will create a blank "Hello World" app. [Templates](https://docs.nativescript.org/tooling/app-templates) are also available to start with a more complete solution.
 
 ## Debugging
 
