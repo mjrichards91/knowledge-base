@@ -137,6 +137,14 @@ navigationBar.barStyle = UIBarStyle.UIBarStyleBlack;
 
 This process is known as "mashalling". There is documentation on how marshalling works for both [iOS](https://docs.nativescript.org/runtimes/ios/marshalling/marshalling-overview) and [Android](https://docs.nativescript.org/runtimes/android/marshalling/overview).
 
+Views can be customized for each platform within xml using plaform specific attributes. The prefixes `ios:` and `android:` are available for all attributes on all views. For example:
+
+```xml
+<Button ios:text="foo" android:text="bar" />
+```
+
+For more information on how this native coding works, see [this blog post](https://developer.telerik.com/featured/nativescript-works/).
+
 ## Modules
 
 Modules are included out of the box with NativeScript and others can be found through NPM.
