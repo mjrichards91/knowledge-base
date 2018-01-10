@@ -9,7 +9,8 @@ This framework is backed by [Telerik](https://www.telerik.com/) and [Progress](h
 * [Learning](#learning)
 * [Installation](#installation)
 * [Debugging](#debugging)
-* [Writing Apps](#writing-apps)
+* [Writing Cross-Platform Code](#writing-cross-platform-code)
+* [Writing Native Code](#writing-native-code)
 * [Modules](#modules)
 
 ## Learning
@@ -35,7 +36,7 @@ $ tns run ios
 * `console.log` can be used to print primitive values to the console. 
 * `console.dir` should be used to output objects.
 
-## Writing Apps
+## Writing Cross-Platform Code
 
 NativeScript apps use [CommonJS](http://eng.wealthfront.com/2015/06/16/an-introduction-to-commonjs/) syntax.
 
@@ -108,6 +109,33 @@ var user = new observableModule.fromObject({
 
 page.bindingContext = user;
 ```
+
+## Writing Native Code
+
+You are able to write native code specific to each platform without ever leaving Javascript.
+
+Conditional `if` checks can be made once a page is loaded. This is only recommended for a small number of platform specific changes:
+
+```js
+exports.loaded = function (args) {
+    page = args.object;
+
+    if (page.ios) {
+        ...
+    }
+};
+```
+
+More in-depth and frequent changes to a specific platform might merit a platform specific code behind file. For instance, if your view's code behind is `login.js`, you would create a `login.ios.js` and a `login.android.js` to handle the plaform specific logic.
+
+From there, native objects (such as the iOS `ViewController` class) can be accessed using the frame module. Then, all native methods can be called on that instance similar to how you would natively:
+
+```js
+var navigationBar = frameModule.topmost().ios.controller.navigationBar;
+navigationBar.barStyle = UIBarStyle.UIBarStyleBlack;
+```
+
+This process is known as "mashalling". There is documentation on how marshalling works for both [iOS](https://docs.nativescript.org/runtimes/ios/marshalling/marshalling-overview) and [Android](https://docs.nativescript.org/runtimes/android/marshalling/overview).
 
 ## Modules
 
