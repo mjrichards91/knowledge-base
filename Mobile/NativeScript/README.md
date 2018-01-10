@@ -106,6 +106,12 @@ page.bindingContext = user;
 
 ## Modules
 
+Note: Not experienced in all modules, but each are worth evaluating for use.
+
+* https://market.nativescript.org/
+* https://www.npmjs.com/ 
+
+
 ### Frame
 
 The [Frame module](https://docs.nativescript.org/cookbook/ui/frame) is used to perform navigation.
@@ -140,13 +146,6 @@ The [Dialogs module](https://docs.nativescript.org/ui/dialogs) can be used to di
 ```js
 require('ui/dialogs')
 ```
-
-## Plugins
-
-* https://market.nativescript.org/
-* https://www.npmjs.com/ 
-
-Note: These plugins are are found by simply searching, I have no experience using any of them.
 
 ### Notifications
 
