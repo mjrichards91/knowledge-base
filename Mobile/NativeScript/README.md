@@ -162,6 +162,12 @@ To bind an event to a method, use the `()` syntax:
 
 To use two way binding, use the `[(ngModel)]` attribute on your UI component.
 
+### Angular Modules
+
+_(this only applies to an Angular app)_
+
+Modules provides the ability to share code between web and native as well as increases testability and maintainability.
+
 ### Code Behind
 
 _(this only applies to a non-Angular app)_
