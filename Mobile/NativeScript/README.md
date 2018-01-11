@@ -118,6 +118,10 @@ See [documentation](https://docs.nativescript.org/ui/styling) on styling. CSS ca
 
 For platform specific styling, add `@import url('~/platform.css');` as the first statment in the `app.css` file. Then, add specific style values to either the `platform.android.css` or `platform.ios.css` file.
 
+Specific platform styling can be applied per view by defining the platform in the file name such as `myPage.ios.css` and `myPage.android.css`.
+
+Angular `styleUrls` is a list of urls to stylesheets to be used by the component. Be sure to include your stylesheets if you are using Angular.
+
 ### Animations
 
 Animations such as opacity, background color, translations, scaling, and rotating can all be controlled on the native platform from NativeScript. See [documentation](https://docs.nativescript.org/ui/animation) for more information.
