@@ -108,6 +108,28 @@ Tips:
 * Close XML elements the long way. `<Button text="Click Me!></Button>` over `<Buttion text="Click Me!" />`. Angular and Typescript requires this.
 * Check [this resource](http://www.hybridtonative.com/) for information on how to transition an existing Angular web app to mobile.
 
+#### Angular
+
+Within an Angular component, you can gain access to the page instance through the page module. Furthermore, that page can be modified before it is displayed using the OnInit module as well.
+
+```js
+import { OnInit } from "@angular/core";
+import { Page } from 'ui/page';
+
+// Implement OnInit
+export class LoginComponent implements OnInit {
+    
+    // Inject the Page module
+    constructor(private page: Page) {}
+
+    // Required implementation
+    ngOnInit() {
+        this.page.actionBarHidden = true;
+        this.page.backgroundImage = "res://some-background-image";
+    }
+}
+```
+
 ### Layouts
 
 See [documentation](https://docs.nativescript.org/ui/layouts), check out [some code samples](https://docs.nativescript.org/angular/code-samples/ui/layouts), and look into an [in-depth analysis](https://developer.telerik.com/featured/demystifying-nativescript-layouts/) for each layout. 
