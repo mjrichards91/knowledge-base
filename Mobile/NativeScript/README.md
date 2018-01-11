@@ -202,7 +202,7 @@ More on dependency injection:
 * The Angular `Http` service can be injected into services the same as any others. This is the standard way of performing http calls in Angular. Furthermore, using that `Http` service to make a post call will create an [RxObservable](http://reactivex.io/documentation/observable.html) that needs to be subscribed to.
 
 
-TODO: Move this somewhere else
+TODO: Move these somewhere else
 
 * Arrow functions give the intended context to `this`.
 
@@ -215,6 +215,33 @@ this.someService.someObservableFunction()
         // this is the context of the wrapping class, not the function
         this.someExternalVariable = 'dude';
     }
+```
+* Spread operator `...` is ES2016 syntax
+
+```js
+let x = [2,3];
+let y = [1, ...x];
+
+// y is [1,2,3]
+```
+
+### Routing
+
+Routing is required when navigating between pages. There are differences in routing from a web app in that Android has a back button and iOS has a swipe back gesture to consider. See Angular's [documentation](https://angular.io/guide/router) for an overview of the web routing concepts.
+
+Using the `<page-router-outlet>` as the apps component sets up the app to use routing. This outlet extends the web version `<router-outlet>` to work with mobile concepts.
+
+Simply import the router, inject, and navigate:
+
+```js
+import { Router } from "@angular/router";
+
+constructor(private router: Router) {
+}
+
+someMethod() {
+    this.router.navigate(['somePage']);
+}
 ```
 
 ### Code Behind
