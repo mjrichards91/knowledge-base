@@ -117,7 +117,7 @@ import { OnInit } from "@angular/core";
 import { Page } from 'ui/page';
 
 // Implement OnInit
-export class LoginComponent implements OnInit {
+export class SomeComponent implements OnInit {
     
     // Inject the Page module
     constructor(private page: Page) {}
@@ -147,6 +147,30 @@ Angular `styleUrls` is a list of urls to stylesheets to be used by the component
 ### Animations
 
 Animations such as opacity, background color, translations, scaling, and rotating can all be controlled on the native platform from NativeScript. See [documentation](https://docs.nativescript.org/ui/animation) for more information.
+
+#### Angular
+
+To perform animations in Angular, the native elements container needs to be retrieved. This is done through a series of modules and configuration in your component:
+
+```js
+import { Component, ElementRef, ViewChild } from "@angular/core";
+import { Color } from 'color';
+import { View } from 'ui/core/view';
+
+export class SomeComponent {
+    // container is an id from the view (<StackLayout #container></StackLayout)
+    @ViewChild("container") container: ElementRef;
+    
+    someMethod() {
+        let container = <View>this.container.nativeElement;
+
+        container.animate({
+            backgroundColor: new Color('white'),
+            duration: 200
+        });
+    }
+}
+```
 
 ### Images
 
