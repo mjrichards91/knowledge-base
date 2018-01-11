@@ -132,7 +132,39 @@ Images can be referenced with a URL from a website, relative to the `app/images`
 
 A helpful tool to create images for varying resolutions is the [NativeScript Image Builder](http://nsimage.brosteins.com/).
 
+### Events
+
+See [documentation](https://docs.nativescript.org/core-concepts/events) on events. Each component has various events so be sure to check it's documentation as well.
+
+### Binding
+
+_(this only applies to an Angular app)_
+
+Check the [documentation](https://docs.nativescript.org/angular/core-concepts/angular-data-binding) for an in-depth overview of binding with Angular.
+
+#### One-Way Binding
+
+To bind an attribute to a property, use the `[]` syntax:
+
+```js
+// text is bound to a property named email
+<TextField [text]="email"></TextField>
+```
+
+To bind an event to a method, use the `()` syntax:
+
+```js
+// the tap event is bound to the method doSomething()
+<Button (tap)="doSomething()"></Button>
+```
+
+#### Two-Way Binding
+
+To use two way binding, use the `[(ngModel)]` attribute on your UI component.
+
 ### Code Behind
+
+_(this only applies to a non-Angular app)_
 
 Named identically as the view. 
 
@@ -141,6 +173,8 @@ Navigation can be performed here using the [frame](#frame) module.
 Adding an id to a view element allows access to it in the code behind through the page's `page.getViewById('your_id')` method.
 
 ### View Model
+
+_(this only applies to a non-Angular app)_
 
 [Observable](#observable) is the module that is used as the view model.
 
