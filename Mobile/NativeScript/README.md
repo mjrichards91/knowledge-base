@@ -168,6 +168,55 @@ _(this only applies to an Angular app)_
 
 Modules provides the ability to share code between web and native as well as increases testability and maintainability.
 
+### Angular Services
+
+_(this only applies to an Angular app)_
+
+Injectable is a requirement for all services. This allows the service to be injected into constructors. See documentation on [Angular's Dependency Injection](https://angular.io/guide/dependency-injection).
+
+```js
+import { Injectable } from "@angular/core";
+
+@Injectable()
+export class ModelService {
+}
+
+// In a construtor somewhere else...
+constructor(private modelService: ModelService) {
+}
+```
+
+To use a service, add it to your apps compoent providers:
+
+```js
+import { ModelService } from "./shared/model/model.service";
+
+@Component({
+  providers: [ModelService],
+  ...
+})
+```
+
+More on dependency injection:
+
+* The Angular `Http` service can be injected into services the same as any others. This is the standard way of performing http calls in Angular. Furthermore, using that `Http` service to make a post call will create an [RxObservable](http://reactivex.io/documentation/observable.html) that needs to be subscribed to.
+
+
+TODO: Move this somewhere else
+
+* Arrow functions give the intended context to `this`.
+
+```js
+someExteralVariable = 'sup';
+
+this.someService.someObservableFunction()
+    .subscribe(
+    () => {
+        // this is the context of the wrapping class, not the function
+        this.someExternalVariable = 'dude';
+    }
+```
+
 ### Code Behind
 
 _(this only applies to a non-Angular app)_
