@@ -55,6 +55,7 @@ NativeScript apps use [CommonJS](http://eng.wealthfront.com/2015/06/16/an-introd
 ### Contents
 
 * [Structure](#structure)
+* [UI Components](#ui-components)
 * [Layouts](#layouts)
 * [CSS](#css)
 * [Animations](#animations)
@@ -96,6 +97,16 @@ When using Angular, there will be both .js and .ts files which are generated and
     "**/*.map": { "when": "$(basename).map" }
 }
 ```
+
+### UI Components
+
+The UI is made up of either .html (Angular) or .xml files. Regardless, the syntax is written in XML in both. Check the [documentation](https://docs.nativescript.org/ui/components) to see the available components. Each component is translated to a native component to give it that native look and feel.
+
+Tips:
+
+* The backtick character (`` ` ``) is a template literal and is used to wrap multiline strings without concatenation. 
+* Close XML elements the long way. `<Button text="Click Me!></Button>` over `<Buttion text="Click Me!" />`. Angular and Typescript requires this.
+* Check [this resource](http://www.hybridtonative.com/) for information on how to transition an existing Angular web app to mobile.
 
 ### Layouts
 
