@@ -62,6 +62,7 @@ NativeScript apps use [CommonJS](http://eng.wealthfront.com/2015/06/16/an-introd
 * [Images](#images)
 * [Code Behind](#code-behind)
 * [View Model](#view-model)
+* [Unit Testing](#unit-testing)
 
 ### Structure
 
@@ -320,6 +321,18 @@ var user = new observableModule.fromObject({
 
 page.bindingContext = user;
 ```
+
+### Unit Testing
+
+See [guide](https://docs.nativescript.org/angular/tooling/testing) on unit testing.
+
+Troubleshooting Links:
+
+* https://github.com/TobiasHennig/nativescript-toast/blob/master/samples/angular/app/tests/app.component.spec.ts
+* https://github.com/NativeScript/nativescript-angular/issues/479#issuecomment-265966999
+* https://stackoverflow.com/questions/43925971/testing-component-in-nativescript-angular2-app
+* https://github.com/gonzofish/semaphore-ng2-webpack/tree/master/src/services
+* http://karma-runner.github.io/1.0/intro/configuration.html
 
 ## Writing Native Code
 
