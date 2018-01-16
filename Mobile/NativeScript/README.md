@@ -186,7 +186,9 @@ See [documentation](https://docs.nativescript.org/core-concepts/events) on event
 
 _(this only applies to an Angular app)_
 
-Check the [documentation](https://docs.nativescript.org/angular/core-concepts/angular-data-binding) for an in-depth overview of binding with Angular.
+Check the [documentation](https://docs.nativescript.org/angular/core-concepts/angular-data-binding) for an in-depth overview of binding with Angular. 
+
+Binding also gives the option of using data converters (format a date for example). Check an overview of [available converters](https://alligator.io/angular/built-in-pipes-angular/)
 
 #### One-Way Binding
 
