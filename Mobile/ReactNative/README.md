@@ -97,6 +97,17 @@ $ brew install watchman
 * Buttons have typical on tap event to tie into user interaction
 * There are also Touchable components that provide more customization than buttons
 
+## List
+
+* A `FlatList` or `SectionList` can be used with a template similar to list components in other frameworks
+
+## Networking
+
+* React Native provides its own `fetch` API to handle requests from the web
+* Responses return Promises to conform to the ES6 standards
+* 3rd party libraries such as frisbee and axios can be used in place of fetch as well
+* WebSockets are also a big feature supported
+
 ## Plugins
 
 Note: These plugins are are found by simply searching, I have no experience using any of them.
