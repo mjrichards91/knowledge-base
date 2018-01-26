@@ -90,6 +90,7 @@ $ brew install watchman
     onChangeText={(text) => this.setState({text})}
   />
   ```
+* Text input behaves the same as it doesn on the web so understanding of web translates to mobile
 
 ## Plugins
 
