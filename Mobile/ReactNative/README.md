@@ -92,6 +92,11 @@ $ brew install watchman
   ```
 * Text input behaves the same as it doesn on the web so understanding of web translates to mobile
 
+## Touches
+
+* Buttons have typical on tap event to tie into user interaction
+* There are also Touchable components that provide more customization than buttons
+
 ## Plugins
 
 Note: These plugins are are found by simply searching, I have no experience using any of them.
