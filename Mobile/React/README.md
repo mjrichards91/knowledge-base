@@ -20,6 +20,77 @@ Make sure `watchman` is installed as well to correctly start the project server
 $ brew install watchman
 ```
 
+## Basics
+
+* Uses JSX syntax for embedding XML within Javascript
+
+## Components
+
+* Comprised of Components with only a `render` function as a requirement
+
+## Props
+
+* Props are generally Javascript variables that can be bound in the JSX syntax
+* Components can be built to be reused in a view - Greeting component that prints “Hello {name}” and the render component containing many `<Greeting name=“Mike”/>`
+* Props are static
+
+## State
+
+* State are variables that are dynamic throughout the app’s lifecycle
+* The initial state should be set in the constructor `this.state = { isShowingText = true };`
+* Changes to the state should be made in the `setState` function 
+  ```js 
+  this.setState(previousState => {
+       return { isShowingText: !previousState.isShowingText };
+  });
+  ```
+* A state container like Redux can also be used to manage state. Changes would be applied to Redux rather than the `setState` function in this case.
+* React Native state is handled the exact same in React so understanding the web version will apply the same to mobile.
+
+## Style
+
+* Styling is set through javascript values that are similar to CSS
+* A more comprehensive set of styles can be created through the `StyleSheet` object
+  ```js
+  const styles = StyleSheet.create({
+    bigblue: {
+      color: 'blue',
+      fontWeight: 'bold',
+      fontSize: 30,
+    },
+    red: {
+      color: 'red',
+    },
+  });
+  ```
+## Layout
+  
+### Height & Width
+
+* Sizes of components can be explicitly set to a specific size (10, 100, etc.) or use a `flex` size that takes up a proportional amount of the available space. 
+
+### Flexbox
+
+* `Flexbox` is used to control the direction and alignment of its items. This value is set on a components `style`.
+  ```js
+  <View style={{
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }}>
+  ```
+## Text Input
+
+* `TextInput` controls contain the typical placeholder and text changed event. The changed event can be tied into changing the state.
+  ```js
+  <TextInput
+    style={{height: 40}}
+    placeholder="Type here to translate!"
+    onChangeText={(text) => this.setState({text})}
+  />
+  ```
+
 ## Plugins
 
 Note: These plugins are are found by simply searching, I have no experience using any of them.
