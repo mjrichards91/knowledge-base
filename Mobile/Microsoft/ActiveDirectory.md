@@ -2,10 +2,9 @@
 
 Guide for integrating Active Directory into a mobile app.
 
-## General
+**It is generally recommended to perform any Active Directory authentication on the server rather then the client side. So far, this guide goes into how to do it on the client side.**
 
-General guidelines for integrating into any mobile platform.
-
+## Active Directory Authentication
 In Azure, you must register your app to give it the sufficient permissions.
 
 When asked for the tenant ID for your Azure instance, it is typically in the format `yourcompany.onmicrosoft.com`.
@@ -18,7 +17,7 @@ Links:
 * [Microsoft Graph API Reference](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/api-catalog)
 
 
-## Xamarin
+### Xamarin
 
 There is an [MSAL framework](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet) that is available and is (at the time of this writing) in preview. That library seems to be the preferred one moving forward as it hits the v2.0 endpoint. However, current experience is with the [Microsoft ADAL framework](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet).
 
@@ -28,7 +27,7 @@ Links
 
 * [Quickstart](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devquickstarts-xamarin)
 
-## iOS
+### iOS
 
 There is an [MSAL framework](https://github.com/AzureAD/microsoft-authentication-library-for-objc) that is available and is (at the time of this writing) in preview. That library seems to be the preferred one moving forward as it hits the v2.0 endpoint. Current experience is with the MSAL library.
 
