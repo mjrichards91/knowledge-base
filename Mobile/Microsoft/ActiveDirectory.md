@@ -21,7 +21,7 @@ Links:
 
 There is an [MSAL framework](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet) that is available and is (at the time of this writing) in preview. That library seems to be the preferred one moving forward as it hits the v2.0 endpoint. However, current experience is with the [Microsoft ADAL framework](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet).
 
-The redirect URI to set in your app and in Azure can be anyhing in a valid URI format. Something like `https://your-authentication-app"`.
+The redirect URI to set in your app and in Azure can be anyhing in a valid URI format. Something like `https://your-authentication-app`.
 
 Links:
 
