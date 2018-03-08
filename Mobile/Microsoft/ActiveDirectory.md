@@ -23,7 +23,7 @@ There is an [MSAL framework](https://github.com/AzureAD/microsoft-authentication
 
 The redirect URI to set in your app and in Azure can be anyhing in a valid URI format. Something like `https://your-authentication-app"`.
 
-Links
+Links:
 
 * [Quickstart](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devquickstarts-xamarin)
 
