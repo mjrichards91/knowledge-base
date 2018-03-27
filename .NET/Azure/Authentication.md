@@ -9,6 +9,6 @@
 * ADAL (https://blog.xamarin.com/authenticate-xamarin-mobile-apps-using-azure-active-directory/)
 * MSAL (https://blog.xamarin.com/authenticate-mobile-apps-using-microsoft-authentication-library/)
 
-## Key Valut (TODO move this)
+## Key Vault (TODO move this)
 
 * https://docs.microsoft.com/en-us/azure/key-vault/key-vault-whatis 
