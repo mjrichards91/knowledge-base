@@ -4,7 +4,7 @@ Information relating to running a local ASP.NET web application and debugging.
 ## Mac
 If you are running Windows in a virtual machine via Parallels or some other guest service, you will need to make some configuration changes to allow access to that local server externally.
 
-1. Set up VM to use a "Bridged" network connection.
+1. Set up VM to use a [Bridged network connection](https://kb.parallels.com/en/4948#bridged).
 1. Turn off Windows Firewall.  
 1. If you cannot turn off Windows Firewall, allow IIS Express through Windows firewall:
 
