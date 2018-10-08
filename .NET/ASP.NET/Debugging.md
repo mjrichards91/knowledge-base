@@ -6,7 +6,8 @@ If you are running Windows in a virtual machine via Parallels or some other gues
 
 1. Set up VM to use a "Bridged" network connection.
 1. Turn off Windows Firewall.  
-1. If you cannot turn off Windows Firewall, allow IIS Express through Windows firewall.  
+1. If you cannot turn off Windows Firewall, allow IIS Express through Windows firewall:
+
     ```
     Start -> Windows Firewall with Advanced Security -> Inbound Rules -> New Rule...
     ```
@@ -14,11 +15,13 @@ If you are running Windows in a virtual machine via Parallels or some other gues
     * Program `%ProgramFiles%\IIS Express\iisexpress.exe` 
     * OR Port `YOUR_PORT` TCP . 
 1. Update the `$(solutionDir)\.vs\config\applicationhost.config` file for your application to bind to all IP addresses:
+
     ```xml
     <binding protocol="https" bindingInformation="*:[your-https-port]:*" />
     <binding protocol="http" bindingInformation="*:[your-http-port]:*" />
     ```
 1. Open Command Prompt as an Administrator on the Windows machine and allow external access to the IP address to anyone:
+
     ```
     netsh http add urlacl url=https://*:[your-https-port]/ user=everyone
     netsh http add urlacl url=http://*:[your-http-port]/ user=everyone
